@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "VIRTUALMACHINE",
+    "title": "VIRTUAL MACHINE",
+    "type": "single",
+    "releaseDate": "2026-10-16",
+    "cover": "assets/covers/virtualmachine.webp",
+    "accent": "#4e0205",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/album/3zxXzr53EjRvDDJlVLuixn",
+      "apple": "https://music.apple.com/us/album/virtual-machine/6823635435?i=6823635436",
+      "youtubeMusic": "https://music.youtube.com/watch?v=T-LSV9pKPN8&si=We_atllQ2qF7RQlh",
+      "youtube": "https://www.youtube.com/watch?v=T-LSV9pKPN8",
+      "deezer": "https://www.deezer.com/us/track/4352513982",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/virtual-machine",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/virtual-machine"
+    }
+  },
+  {
+    "slug": "AUDITORYIMAGERY",
+    "title": "AUDITORY IMAGERY",
+    "type": "single",
+    "releaseDate": "2026-09-11",
+    "cover": "assets/covers/auditoryimagery.webp",
+    "accent": "#bff488",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/album/25ii5HMBT60sFXSpiEflpz",
+      "apple": "https://music.apple.com/us/album/auditory-imagery/6810586050?i=6810586172",
+      "youtubeMusic": "https://music.youtube.com/watch?v=T-LSV9pKPN8&si=hXZ31YWyxmigBCG_",
+      "youtube": "https://www.youtube.com/watch?v=H9P79O5c65E",
+      "deezer": "https://www.deezer.com/us/track/4277922242",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/virtual-machine",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/auditory-imagery"
+    }
+  },
+  {
+    "slug": "EFFORTLESSMEMORIES",
+    "title": "EFFORTLESS MEMORIES",
+    "type": "single",
+    "releaseDate": "2026-09-25",
+    "cover": "assets/covers/effortlessmemories.webp",
+    "accent": "#154e89",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/album/1weT4fTWXo03xtUxyaRSkT",
+      "apple": "https://music.apple.com/us/album/effortless-memories/6811050051?i=6811050052",
+      "youtubeMusic": "https://music.youtube.com/watch?v=Ne4teq2xiWk&si=WM5OHIfOPvKZEyTL",
+      "youtube": "https://www.youtube.com/watch?v=Ne4teq2xiWk",
+      "deezer": "https://www.deezer.com/us/track/4280470912",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/effortless-memories",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/effortless-memories"
+    }
+  },
+  {
+    "slug": "PROVISIONS",
+    "title": "PROVISIONS",
+    "type": "album",
+    "releaseDate": "2025-10-10",
+    "cover": "assets/covers/provisions.webp",
+    "accent": "#ec5b08",
+    "blurb": "Full-length feature album released through Hotboxed Records",
+    "links": {
+      "spotify": "https://open.spotify.com/album/5Ahj6MJua0xIquVNKb8YWL",
+      "apple": "https://music.apple.com/us/album/provisions/1843881124",
+      "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_kvrAUoIrMNK1whdECgIne2B9fkYVB4Ess&si=WOWPnZd_l6jXOWJq",
+      "youtube": "https://www.youtube.com/watch?v=MqWDBsGaeGs&list=RDMqWDBsGaeGs&",
+      "bandcamp": "https://hotboxedrecords.bandcamp.com/album/provisions"
+    }
+  }
+]

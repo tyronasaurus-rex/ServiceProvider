@@ -1,0 +1,29 @@
+{
+  "artist": "Service Provider",
+  "tagline": "",
+  "bio": "",
+  "accent": "#e07a45",
+  "locale": "en-US",
+  "socials": [
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com/srvcprvdr"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://youtube.com/@srvcprvdr"
+    },
+    {
+      "platform": "spotify",
+      "url": "https://open.spotify.com/artist/4lIEqnlGrom5Dm5hANx6R8"
+    },
+    {
+      "platform": "apple",
+      "url": "https://music.apple.com/us/artist/service-provider/1760178759"
+    },
+    {
+      "platform": "bandcamp",
+      "url": "https://srvcprvdr.bandcamp.com"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Afterglow — Mara Voss</title>
+    <meta name="description" content="The last light on the dashboard, and the turn you almost didn't take. Released October 17, 2026. Mara Voss.">
+    <meta name="theme-color" content="#e07a45">
+    <meta name="color-scheme" content="dark">
+    <meta name="robots" content="index, follow">
+    <!--
+      Link previews read these tags and do not run the page script.
+      When the featured release changes, update the title, description, and og:image.
+      Use a JPG or PNG for og:image — SVG previews are unreliable.
+    -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Afterglow — Mara Voss">
+    <meta property="og:description" content="The last light on the dashboard, and the turn you almost didn't take.">
+    <meta property="og:image" content="assets/covers/afterglow.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Afterglow — Mara Voss">
+    <meta name="twitter:description" content="The last light on the dashboard, and the turn you almost didn't take.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="assets/covers/afterglow.svg">
+    <link rel="preload" href="assets/fonts/NouvelleGrotesquerie.otf" as="font" type="font/otf" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="is-loading">
+    <div class="glow" aria-hidden="true"></div>
+    <a class="skip" href="#links">Skip to listen links</a>
+    <noscript>
+      <p class="noscript">Turn on JavaScript to open this release page.</p>
+    </noscript>
+    <div class="page">
+      <header class="top">
+        <div class="brand">
+          <a class="wordmark" id="home" href="./">Mara Voss</a>
+          <p class="tagline" id="tagline" hidden></p>
+        </div>
+        <button class="share" id="share" type="button">Share</button>
+      </header>
+      <main>
+        <section class="stage" id="stage">
+          <div class="sleeve">
+            <img id="cover" alt="" width="1280" height="1280" decoding="async" fetchpriority="high">
+            <div class="sleeve-fallback" id="cover-fallback" hidden></div>
+          </div>
+          <div class="info">
+            <p class="kicker" id="kicker"></p>
+            <h1 id="title" tabindex="-1"></h1>
+            <p class="byline" id="byline"></p>
+            <p class="blurb" id="blurb" hidden></p>
+            <p class="when" id="when" hidden></p>
+            <div class="countdown" id="countdown" hidden>
+              <p class="sr-only">Time until release</p>
+              <div><strong id="cd-days">00</strong><span>Days</span></div>
+              <div><strong id="cd-hours">00</strong><span>Hours</span></div>
+              <div><strong id="cd-mins">00</strong><span>Min</span></div>
+              <div><strong id="cd-secs">00</strong><span>Sec</span></div>
+            </div>
+            <div class="links" id="links"></div>
+            <details class="tracks" id="tracks" hidden>
+              <summary id="track-summary">Tracklist</summary>
+              <ol id="track-list"></ol>
+            </details>
+          </div>
+        </section>
+        <section class="catalog" id="catalog-section" hidden>
+          <h2 id="releases-heading">Releases</h2>
+          <ul class="catalog-row" id="catalog" aria-labelledby="releases-heading"></ul>
+        </section>
+      </main>
+      <footer class="foot">
+        <p class="bio" id="bio" hidden></p>
+        <nav class="socials" id="socials" aria-label="Social"></nav>
+        <p class="colophon" id="colophon"></p>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
