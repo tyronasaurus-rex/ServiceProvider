@@ -4,6 +4,12 @@
   "bio": "",
   "accent": "#e07a45",
   "locale": "en-US",
+  "videos": [
+    {
+      "title": "DUBSCAPE LIVE SET",
+      "url": "https://www.youtube.com/watch?v=UJ6FEBtDm4Y"
+    }
+  ],
   "socials": [
     {
       "platform": "instagram",

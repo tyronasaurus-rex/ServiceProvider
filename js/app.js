@@ -66,6 +66,7 @@ const ICONS = {
   chevron: svg(
     `<path d="M9 6.5 14.5 12 9 17.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>`
   ),
+  play: svg(`<path fill="currentColor" d="M9.1 7.2v9.6L16.9 12z"/>`),
   instagram: svg(
     `<rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="16.7" cy="7.4" r="0.9" fill="currentColor"/>`
   ),
@@ -135,6 +136,8 @@ const els = {
   trackList: $("track-list"),
   catalogSection: $("catalog-section"),
   catalog: $("catalog"),
+  videosSection: $("videos-section"),
+  videos: $("videos"),
   bio: $("bio"),
   socials: $("socials"),
   colophon: $("colophon"),
@@ -639,6 +642,114 @@ async function onShare() {
   }
 }
 
+function youtubeId(value) {
+  const raw = String(value || "").trim();
+  if (/^[A-Za-z0-9_-]{11}$/.test(raw)) return raw;
+  try {
+    const url = new URL(raw);
+    const host = url.hostname.replace(/^www\./, "").replace(/^m\./, "");
+    if (host === "youtu.be") {
+      const id = url.pathname.split("/").filter(Boolean)[0] || "";
+      return /^[A-Za-z0-9_-]{11}$/.test(id) ? id : "";
+    }
+    const known =
+      host === "youtube.com" ||
+      host === "music.youtube.com" ||
+      host === "youtube-nocookie.com";
+    if (!known) return "";
+    const fromQuery = url.searchParams.get("v") || "";
+    if (/^[A-Za-z0-9_-]{11}$/.test(fromQuery)) return fromQuery;
+    const parts = url.pathname.split("/").filter(Boolean);
+    const marker = parts.findIndex((part) => ["embed", "shorts", "live", "v"].includes(part));
+    const id = marker >= 0 ? parts[marker + 1] || "" : "";
+    return /^[A-Za-z0-9_-]{11}$/.test(id) ? id : "";
+  } catch (error) {
+    return "";
+  }
+}
+
+function videoEntries() {
+  const list = Array.isArray(site.videos) ? site.videos : [];
+  return list
+    .map((item) => {
+      if (typeof item === "string") return { title: "", url: item };
+      if (!item || typeof item !== "object") return null;
+      return { title: String(item.title || "").trim(), url: item.url || item.id || "" };
+    })
+    .map((item) => (item ? { title: item.title, id: youtubeId(item.url) } : null))
+    .filter((item) => item && item.id);
+}
+
+function mountPlayer(frame, video) {
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0&playsinline=1`;
+  iframe.title = video.title || "YouTube video";
+  iframe.allow =
+    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  iframe.allowFullscreen = true;
+  iframe.referrerPolicy = "strict-origin-when-cross-origin";
+  frame.replaceChildren(iframe);
+}
+
+function paintVideos() {
+  els.videos.replaceChildren();
+  const videos = videoEntries();
+  if (!videos.length) {
+    els.videosSection.hidden = true;
+    return;
+  }
+  els.videosSection.hidden = false;
+  videos.forEach((video) => {
+    const item = document.createElement("li");
+    const figure = document.createElement("figure");
+    figure.className = "video";
+
+    const frame = document.createElement("div");
+    frame.className = "video-frame";
+
+    const play = document.createElement("button");
+    play.type = "button";
+    play.className = "video-play";
+    play.setAttribute("aria-label", video.title ? `Play ${video.title}` : "Play video");
+
+    const thumb = document.createElement("img");
+    thumb.alt = "";
+    thumb.decoding = "async";
+    thumb.loading = "lazy";
+    thumb.width = 1280;
+    thumb.height = 720;
+    const useFallback = () => {
+      if (thumb.dataset.fallback) return;
+      thumb.dataset.fallback = "1";
+      thumb.src = `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`;
+    };
+    thumb.addEventListener("error", useFallback);
+    thumb.addEventListener("load", () => {
+      if (thumb.naturalWidth > 0 && thumb.naturalWidth <= 120) useFallback();
+    });
+    thumb.src = `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`;
+
+    const badge = document.createElement("span");
+    badge.className = "video-badge";
+    badge.setAttribute("aria-hidden", "true");
+    badge.innerHTML = ICONS.play;
+
+    play.append(thumb, badge);
+    play.addEventListener("click", () => mountPlayer(frame, video));
+    frame.append(play);
+    figure.append(frame);
+
+    if (video.title) {
+      const caption = document.createElement("figcaption");
+      caption.textContent = video.title;
+      figure.append(caption);
+    }
+
+    item.append(figure);
+    els.videos.append(item);
+  });
+}
+
 function paintProfile() {
   els.home.textContent = site.artist || "Music";
   els.tagline.hidden = !site.tagline;
@@ -666,6 +777,7 @@ function paintProfile() {
     els.socials.append(anchor);
   });
   els.socials.hidden = els.socials.childElementCount === 0;
+  paintVideos();
 }
 
 function showEmpty() {

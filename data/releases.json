@@ -1,4 +1,23 @@
-[
+[  
+{
+    "slug": "FILTERS",
+    "title": "FILTERS",
+    "type": "single",
+    "releaseDate": "2026-10-23",
+    "cover": "assets/covers/filters.webp",
+    "accent": "#0a252e",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/track/6D57HX3waG7RzblNTFlGji?si=1ddd37d29fc14d94",
+      "apple": "https://music.apple.com/us/song/filters/6823635276",
+      "youtubeMusic": "https://music.youtube.com/watch?v=09KT2yszMRU&si=HXgl0G22D7LPvNNZ",
+      "youtube": "https://www.youtube.com/watch?v=09KT2yszMRU",
+      "deezer": "https://link.deezer.com/s/34KLHO3VngOubl0Vvt2o0",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/filters",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/filters"
+    }
+  },
   {
     "slug": "VIRTUALMACHINE",
     "title": "VIRTUAL MACHINE",
