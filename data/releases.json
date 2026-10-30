@@ -1,5 +1,59 @@
-[  
-{
+[
+  {
+    "slug": "MEMBRANE",
+    "title": "MEMBRANE",
+    "type": "ep",
+    "releaseDate": "2026-10-30",
+    "cover": "assets/covers/membrane.webp",
+    "accent": "#c2d0c7",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/album/4Cbcqia5Fln6Joqa9o0n7b?si=EVwy5_-oSN2Y2EGmiyiidw",
+      "apple": "https://music.apple.com/us/album/membrane-ep/6823910323",
+      "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_nhF9c-HSlF4zR_f5_zTWT0o_5JAoMdDcw&si=r89A-uWkV1Qvzuce",
+      "youtube": "https://www.youtube.com/watch?v=X3rPmQPcmOI&list=RDX3rPmQPcmOI",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/sets/membrane",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/MEMBRANE"
+    }
+  },
+  {
+    "slug": "SOFTWAX",
+    "title": "SOFTWAX",
+    "type": "single",
+    "releaseDate": "2026-10-30",
+    "cover": "assets/covers/softwax.webp",
+    "accent": "#5e201b",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/track/6hRp78pc80UuHuE7UMEs1P?si=30202581e67c4781",
+      "apple": "https://music.apple.com/us/album/softwax-single/6823500072",
+      "youtubeMusic": "https://music.youtube.com/watch?v=jy7kWX9j1Bc&si=3F8cKCvUY6EQuTR9",
+      "youtube": "https://www.youtube.com/watch?v=jy7kWX9j1Bc",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/softwax",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/SOFTWAX"
+    }
+  },
+  {
+    "slug": "FIELDDETECTOR",
+    "title": "FIELD DETECTOR",
+    "type": "single",
+    "releaseDate": "2026-10-30",
+    "cover": "assets/covers/fielddetector.webp",
+    "accent": "#328297",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/track/6H1ZbdPkmswXvzcj5hAJTM?si=b8402e9c66644596",
+      "apple": "https://music.apple.com/us/album/field-detector-ep/6823643849",
+      "youtubeMusic": "https://music.youtube.com/watch?v=ykjTNF2BDnQ&si=7QqY4NocYWZsuG0k",
+      "youtube": "https://www.youtube.com/watch?v=ykjTNF2BDnQ",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/field-detector",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/field-detector"
+    }
+  },
+  {
     "slug": "FILTERS",
     "title": "FILTERS",
     "type": "single",
