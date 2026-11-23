@@ -1,5 +1,23 @@
 [
   {
+    "slug": "DIVISON",
+    "title": "DIVISON",
+    "type": "ep",
+    "releaseDate": "2026-11-20",
+    "cover": "assets/covers/division.webp",
+    "accent": "#102b18",
+    "featured": true,
+    "blurb": "",
+    "links": {
+      "spotify": "https://open.spotify.com/album/1TnwvrZX9oNtW5hPwO1fhh",
+      "apple": "https://music.apple.com/us/album/6823644385",
+      "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_m5h-UtM053fdc080RUq0v4GJOpkaC8-0o&si=RP7jt4QRQn7EorKv&drli=1",
+      "youtube": "https://www.youtube.com/watch?v=NbICVvDg2-0&list=RDNbICVvDg2-0",
+      "soundcloud": "https://soundcloud.com/srvcprvdr/division",
+      "bandcamp": "https://srvcprvdr.bandcamp.com/track/DIVISION"
+    }
+  },
+  {
     "slug": "MEMBRANE",
     "title": "MEMBRANE",
     "type": "ep",
@@ -14,7 +32,7 @@
       "youtubeMusic": "https://music.youtube.com/playlist?list=OLAK5uy_nhF9c-HSlF4zR_f5_zTWT0o_5JAoMdDcw&si=r89A-uWkV1Qvzuce",
       "youtube": "https://www.youtube.com/watch?v=X3rPmQPcmOI&list=RDX3rPmQPcmOI",
       "soundcloud": "https://soundcloud.com/srvcprvdr/sets/membrane",
-      "bandcamp": "https://srvcprvdr.bandcamp.com/track/MEMBRANE"
+      "bandcamp": "https://srvcprvdr.bandcamp.com/album/MEMBRANE"
     }
   },
   {
