@@ -1,0 +1,37 @@
+{
+    "slug": "VIRTUALMACHINE",
+    "title": "VIRTUAL MACHINE",
+    "type": "single",
+    "releaseDate": "2026-10-16",
+    "cover": "assets/covers/virtualmachine.webp",
+    "accent": "#4e0205",
+    "featured": true,
+    "blurb": "",
+    "links": {
+        "spotify": "https://open.spotify.com/album/3zxXzr53EjRvDDJlVLuixn",
+        "apple": "https://music.apple.com/us/album/virtual-machine/6823635435?i=6823635436",
+        "youtubeMusic": "https://music.youtube.com/watch?v=T-LSV9pKPN8&si=We_atllQ2qF7RQlh",
+        "youtube": "https://www.youtube.com/watch?v=T-LSV9pKPN8",
+        "deezer": "https://www.deezer.com/us/track/4352513982",
+        "soundcloud": "https://soundcloud.com/srvcprvdr/virtual-machine",
+        "bandcamp": "https://srvcprvdr.bandcamp.com/track/virtual-machine"
+    }
+},
+{
+    "slug": "FIELDDETECTOR",
+    "title": "FIELD DETECTOR",
+    "type": "single",
+    "releaseDate": "2026-10-30",
+    "cover": "assets/covers/fielddetector.webp",
+    "accent": "#328297",
+    "featured": true,
+    "blurb": "",
+    "links": {
+        "spotify": "https://open.spotify.com/track/6H1ZbdPkmswXvzcj5hAJTM?si=b8402e9c66644596",
+        "apple": "https://music.apple.com/us/album/field-detector-ep/6823643849",
+        "youtubeMusic": "https://music.youtube.com/watch?v=ykjTNF2BDnQ&si=7QqY4NocYWZsuG0k",
+        "youtube": "https://www.youtube.com/watch?v=ykjTNF2BDnQ",
+        "soundcloud": "https://soundcloud.com/srvcprvdr/field-detector",
+        "bandcamp": "https://srvcprvdr.bandcamp.com/track/field-detector"
+    }
+},
